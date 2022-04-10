@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+    <title>Orders</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/logo-final.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <div
+            class="text-center sidebar-brand-wrapper d-flex align-items-center"
+          >
+            <a class="sidebar-brand brand-logo" href="index.htm"
+              ><img src="assets/images/logo-final.png" alt="logo"
+            /></a>
+          </div>
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img
+                    src="assets/images/faces-clipart/pic-1.png"
+                    alt="profile"
+                  />
+                  <span class="login-status online"></span>
+                  <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column pr-3">
+                  <span class="font-weight-medium mb-2">Yasmina</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#ui-basic"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                <span class="menu-title">Orders</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./neworders.htm"
+                      >New Orders</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./allorders.htm"
+                      >All Orders</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#ui-basic"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                <span class="menu-title">Add</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/buttons.html"
+                      >Vehicle</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/dropdowns.html"
+                      >Attraction</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li> -->
+          </ul>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+          <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+            <div
+              class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between"
+            >
+              <a
+                class="navbar-brand brand-logo-mini align-self-center d-lg-none"
+                href="index.htm"
+                >
+                <!-- <img src="assets/images/logo-final.png" alt="logo"/> -->
+              </a>
+              <button
+                class="navbar-toggler navbar-toggler align-self-center mr-2"
+                type="button"
+                data-toggle="minimize"
+              >
+                <i class="mdi mdi-menu"></i>
+              </button>
+              <ul class="navbar-nav">
+                <li
+                  class="nav-item nav-search border-0 ml-1 ml-md-3 ml-lg-5 d-none d-md-flex"
+                >
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-nav-right ml-lg-auto">
+                <li class="nav-item nav-profile dropdown border-0">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="profileDropdown"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <img
+                      class="nav-profile-img mr-2"
+                      alt=""
+                      src="assets/images/faces-clipart/pic-1.png"
+                    />
+                    <span class="profile-name">Yasmina</span>
+                  </a>
+                  <div
+                    class="dropdown-menu navbar-dropdown w-100"
+                    aria-labelledby="profileDropdown"
+                  >
+                    <a class="dropdown-item" href="./Login&Sign.htm">
+                      <i class="mdi mdi-logout mr-2 text-primary"></i> Signout
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <button
+                class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+                type="button"
+                data-toggle="offcanvas"
+              >
+                <span class="mdi mdi-menu"></span>
+              </button>
+            </div>
+          </nav>
+          <div class="main-panel">
+                <!-- <div
+                  class="col-xl-4 col-md-6 stretch-card grid-margin stretch-card"
+                >
+
+                 </div> -->
+
+                 <div class="demo">
+
+                 </div>
+              
+           
+            <footer class="footer">
+              <div
+                class="d-sm-flex justify-content-center justify-content-sm-between"
+              >
+                <span
+                  class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+                >
+              </div>
+            </footer>
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.categories.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.fillbetween.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.stack.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.pie.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+    <!--js file of the body of thes page-->
+    <script src="assets/js/neworders.js"></script>
+
+</body>
+</html>
